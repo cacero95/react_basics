@@ -4,10 +4,27 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+// el metodo createElement se encarga de crear un elemento para renderizar
+// para ello encesita un elemento a renderizar como h1, div html elements
+// las propiedades del elemento y los hijos del elemento
+//const element = React.createElement(element, {className:"container"}, childrens)
+// const element = Reatc.createElement("h1", {className:"container"}, "hi world")
+//// el render necesita un elemento a renderizar y en donde se va renderizar
+//ReactDOM.render(element, where)
+//const element = React.createElement("h1", {className:"container"}, "hi world")
+//ReactDOM.render(element,
+//  document.getElementById('root')
+//);
+/**
+ * otra forma de importar un element, pero en este caso importando un component
+ * 
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+ */
+ReactDOM.render(<React.StrictMode>
+  <App />
+</React.StrictMode>,
   document.getElementById('root')
 );
 
